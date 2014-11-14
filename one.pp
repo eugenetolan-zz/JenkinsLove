@@ -1,14 +1,14 @@
- class pe_quickstart_app {
+ evnievnclass pe_quickstart_app {
 
    class { 'apache':
-     mpm_module => 'prefork',
+     mpmevs_module => 'prefork',
    }
-
+v
    include apache::mod::php
-
-   apache::vhost { 'pe_quickstart_app':
+ev
+  v apache::vhost { 'pe_quickstart_app':
      port     => '80',
-     docroot  => '/var/www/pe_quickstart_app',
+   ve  docroot  => '/var/www/pe_quickstart_app',
      priority => '10',
    }
 
@@ -18,4 +18,4 @@
      mode    => '0644',
    }
 
- }
+ 
